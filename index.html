@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/default.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="img/1.png" />
+        <p>MY LIFE RECORD</p>
+      </header>
+      <nav class="navbar">
+        <a href="achieved this year.html">achieved this year</a>
+        <a href="this week.html">this week</a>
+        <a href="to day.html">this today</a>
+        <a href="recode.html">my recode</a>
+      </nav>
+
+      <div id="calendar-container">
+        <div id="calendar">
+            <div class="year">2023</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="day-header">Sun</th>
+                        <th class="day-header">Mon</th>
+                        <th class="day-header">Tue</th>
+                        <th class="day-header">Wed</th>
+                        <th class="day-header">Thu</th>
+                        <th class="day-header">Fri</th>
+                        <th class="day-header">Sat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Calendar cells will be generated here using JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="calendar.js"></script>
+</body>
+</html>
+    </div>
+    <h1 style="color: plum; margin-right: 40px; margin-left: 20px">memo</h1>
+
+    <!-- 메모 입력 폼 -->
+    <form>
+      <input type="text" placeholder="할 일을 입력하세요." />
+      <button>등록</button>
+    </form>
+
+    <!-- 메모 리스트를 표시할 ul 엘리먼트 -->
+    <ul></ul>
+
+    <!-- 이전에 작성한 달력 스크립트 추가 -->
+    <script src="./js/index.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

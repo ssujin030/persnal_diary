@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/month.css" />
+    <link rel="stylesheet" href="./css/memo.css" />
+
+    <title>Monthly Calendar</title>
+  </head>
+  <body>
+    <a href="index.html">
+      <image src="img/ping-removebg-preview.png"class="hover-blue">
+    </a>
+    <p
+      style="
+        color: hotpink;
+        justify-content: center;
+        font-size: 50px;
+      "
+    >
+      achieved this year.
+  </p>
+    
+    <nav class="navbar">
+      <a href="achieved this year.html">achieved this year</a>
+      <a href="this week.html">this week</a>
+      <a href="to day.html">this today</a>
+      <a href="recode.html">my recode</a>
+    </nav>
+    <div class="calendar" id="calendar-container">
+      <!-- JavaScript will populate the calendar here -->
+    </div>
+    <div class="btn-container">
+      <button class="next-btn" id="next-button">Next</button>
+    </div>
+
+    <input type="text" id="memoInput" placeholder="Enter your memo" />
+    <button id="saveMemo">Save Memo</button>
+
+    <div id="memoList">
+      <!-- Memo items will be added here -->
+    </div>
+    <script src="./js/calendar.js"></script>
+    <script src="./js/memo.js"></script>
+  </body>
+</html>
