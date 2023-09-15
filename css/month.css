@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: pink;
+}
+
+.calendar {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto; /* 요소를 가로 중앙으로 위치시킵니다. */
+  margin-bottom: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.month {
+  width: 30%;
+  margin: 10px;
+  border: 1px solid #060505;
+  padding: 10px;
+}
+
+.month-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 5px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.day {
+  padding: 2px; /* padding 값을 조정하여 숫자들이 서로 접하지 않도록 함 */
+  border: 1px solid #de87d1;
+  border-radius: 30px;
+}
+
+.btn-container {
+  margin-top: 10px;
+  display: flex; /* 부모 요소를 플렉스 컨테이너로 설정 */
+  justify-content: flex-end; /* 내부 요소를 오른쪽으로 정렬 */
+  margin-right: 200px;
+}
+
+.next-btn {
+  width: 100px;
+  height: 100px;
+  background-color: plum;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  position: relative;
+  top: -400px;
+}
+
+.next-btn:hover {
+  background-color: palevioletred;
+  color: aliceblue;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: hotpink;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  margin: 50px;
+}
+.navbar a {
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+  text-align: center;
+}
+.navbar a:hover {
+  background-color: plum;
+  color: white;
+}
+img {
+  width: 200px; /* 원하는 너비로 설정 */
+  margin-top: 100px; /* 이미지를 아래로 내림*/
+}
+
+.hover-blue:hover {
+  filter: brightness(0.8); /* 이미지 밝기를 줄여 파란색으로 보이도록 함 */
+}
