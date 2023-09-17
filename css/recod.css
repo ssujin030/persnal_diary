@@ -1,0 +1,108 @@
+img {
+  width: 200px;
+  height: 200px;
+  display: block; /* 이미지를 블록 레벨 요소로 설정하여 가로 세로 중앙 정렬이 가능하도록 합니다. */
+  margin: 0 auto; /* 가로 중앙 정렬을 위해 좌우 여백을 자동으로 설정합니다. */
+  margin-top: 100px;
+  margin-left: 580px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: hotpink;
+  justify-content: center;
+  position: sticky;
+  top: 0px; /* 20px 아래에서 고정 */
+  margin-bottom: 50px; /* 아래 여백 추가 */
+}
+
+.navbar a {
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+  text-align: center;
+}
+.navbar a:hover {
+  background-color: plum;
+  color: white;
+}
+
+tr {
+  color: rgb(201, 102, 102);
+}
+
+/* 테이블 래퍼 스타일링 */
+.table-wrapper {
+  width: 80%; /* 테이블 래퍼의 너비 설정 */
+  margin: 0 auto; /* 가운데 정렬을 위해 auto 설정 */
+  overflow-x: auto; /* 가로 스크롤이 필요한 경우 스크롤 표시 */
+  padding: 40px;
+  font-size: 16px;
+  margin-right: 1000px;
+}
+
+.memo-table {
+  width: 500px;
+  height: 370px;
+  padding: 10px;
+  border: 1px solid rgb(153, 117, 135);
+  border-radius: 5px;
+
+  background-color: white;
+  color: rgb(164, 125, 132);
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+/*날짜 검색버튼 ㄲ */
+#searchDate {
+  width: 500px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid hotpink;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 0px;
+  background-color: pink;
+  color: purple;
+}
+
+/* 검색 버튼 스타일링 */
+#searchButton {
+  width: 100px;
+  height: 45px;
+  padding: 0px;
+  background-color: plum;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* 검색 버튼 호버 스타일링 */
+#searchButton:hover {
+  background-color: hotpink;
+}
+/* Delete 버튼 스타일링 */
+button {
+  padding: 5px 10px;
+  background-color: plum;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Delete 버튼 호버 스타일링 */
+button:hover {
+  background-color: hotpink;
+}
+
+.no-results {
+  color: red;
+  font-weight: bold; /* 글꼴을 굵게 설정 */
+  font-size: 18px;
+}
