@@ -1,0 +1,168 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: hotpink;
+  justify-content: center;
+  position: sticky;
+  top: 0px; /* 20px 아래에서 고정 */
+  margin-bottom: 180px; /* 아래 여백 추가 */
+}
+
+.navbar a {
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+  text-align: center;
+}
+.navbar a:hover {
+  background-color: plum;
+  color: white;
+}
+#scheduleTable {
+  width: 80%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  color: black;
+  position: absolute;
+  top: 1200px;
+  left: 50px;
+  margin-top: 70px;
+  margin-bottom: 100px; /* 아래 여백을 100px로 설정합니다. */
+}
+
+th {
+  border: 1px solid rgb(216, 129, 176);
+  padding: 20px;
+  text-align: center;
+  vertical-align: top;
+}
+
+td {
+  border: 1px solid plum;
+  padding: 20px;
+  height: 300px; /* 높이를 300px로 고정 */
+  text-align: left;
+  background-color: white;
+  color: rgb(182, 101, 101);
+  vertical-align: top;
+  overflow: auto; /* 텍스트가 영역을 벗어나면 스크롤을 생성 */
+  white-space: nowrap; /* 줄 바꿈을 방지하여 높이 고정 */
+}
+
+th {
+  background-color: plum;
+  color: rgb(123, 97, 110);
+  font-size: 13px;
+} /*monday,,,등 색상 바꿔줌*/
+
+tr:nth-child(odd) {
+  background-color: wheat;
+}
+img {
+  width: 200px; /* 원하는 너비로 설정 */
+  height: 200;
+  top: 300px;
+}
+/* 이미지에 호버 시 색상 변경 */
+.hover-blue:hover {
+  filter: brightness(0.8); /* 이미지 밝기를 줄여 파란색으로 보이도록 함 */
+}
+/* 메모장 스타일 */
+
+.memo-container {
+  margin: 50px;
+  text-align: left;
+}
+
+.memo {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  width: 500px;
+  height: 400px;
+}
+
+.memo-content {
+  min-height: 100px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.5;
+  resize: vertical;
+  color: #c9719e; /* 텍스트 색상을 연한 핑크로 설정 */
+}
+.edit-button {
+  background-color: rgb(207, 114, 207);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  position: sticky;
+  margin-top: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+  background-color: plum;
+}
+
+.save-button {
+  background-color: rgb(207, 114, 207);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  position: sticky;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.save-button:hover {
+  background-color: plum;
+}
+
+/* h2 제목을 조금만 왼쪽으로 이동 */
+h2 {
+  color: rgb(194, 98, 164);
+  margin-left: 50px; /* 이동할 여백 크기 조절 */
+  position: absolute;
+  top: 500px;
+}
+/* 이전 CSS 코드 */
+.memo-content ol {
+  list-style-type: decimal; /* 숫자로 표시 */
+  margin-right: 0; /* 왼쪽 여백 제거 */
+  padding-left: 20px; /* 항목 내부 여백 추가 */
+}
+
+.memo-content li {
+  border-bottom: 1px dotted #ffb6c1; /* 점선 추가 */
+  padding: 5px 0; /* 각 항목의 위아래 여백 설정 */
+}
+
+.memo-content li:last-child {
+  border: none; /* 마지막 항목의 점선 제거 */
+}
+
+#saveButton {
+  background-color: rgb(207, 114, 207);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: block;
+  margin: 0 auto; /* 가운데 정렬 */
+}
+
+#saveButton:hover {
+  background-color: plum;
+}
